@@ -15,7 +15,7 @@
             height: 100vh;
         }
     </style>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@2.1.1/dist/model-viewer.min.js"></script>
 </head>
 <body>
     <model-viewer
@@ -25,8 +25,10 @@
         camera-controls
         environment-image="neutral"
         shadow-intensity="1"
-        autoplay
-        ar-button>
+        autoplay>
+        <button slot="ar-button" style="background: #007AFF; border: none; border-radius: 24px; color: white; position: absolute; bottom: 24px; right: 24px; padding: 12px 24px; font-size: 16px; font-weight: bold; z-index: 1000;">
+            🚀 View in AR
+        </button>
     </model-viewer>
 </body>
 </html>
